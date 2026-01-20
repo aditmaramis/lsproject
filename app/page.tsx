@@ -29,7 +29,7 @@ export default async function Home() {
 		}
 	} catch (error) {
 		// If Clerk is not configured, continue to show the landing page
-		console.log('Clerk authentication not configured');
+		// This allows the page to render even without Clerk credentials
 	}
 
 	return (
@@ -89,8 +89,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>Secure Authentication</CardTitle>
 								<CardDescription>
-									Production-ready auth with Clerk. Sign in with email, social
-									providers, or magic links.
+									Production-ready auth with Clerk. Sign in with email, social providers, or magic links.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -102,8 +101,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>Type-Safe Database</CardTitle>
 								<CardDescription>
-									Drizzle ORM with Neon PostgreSQL. Fully typed queries and
-									automatic migrations.
+									Drizzle ORM with Neon PostgreSQL. Fully typed queries and automatic migrations.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -115,8 +113,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>Lightning Fast</CardTitle>
 								<CardDescription>
-									Built on Next.js 16 App Router with React Server Components for
-									optimal performance.
+									Built on Next.js 16 App Router with React Server Components for optimal performance.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -128,8 +125,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>Beautiful UI</CardTitle>
 								<CardDescription>
-									Shadcn/ui components with Tailwind CSS v4. Fully customizable
-									and accessible.
+									Shadcn/ui components with Tailwind CSS v4. Fully customizable and accessible.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -141,8 +137,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>TypeScript First</CardTitle>
 								<CardDescription>
-									Full type safety across your entire stack. Catch errors before
-									they reach production.
+									Full type safety across your entire stack. Catch errors before they reach production.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -154,8 +149,7 @@ export default async function Home() {
 								</div>
 								<CardTitle>Developer Experience</CardTitle>
 								<CardDescription>
-									Hot reload, TypeScript, ESLint, and modern tooling for the best
-									DX possible.
+									Hot reload, TypeScript, ESLint, and modern tooling for the best DX possible.
 								</CardDescription>
 							</CardHeader>
 						</Card>
