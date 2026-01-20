@@ -22,9 +22,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'lsproject - Modern Next.js Starter',
+	title: 'lsproject - Fast & Secure Link Shortener',
 	description:
-		'Production-ready Next.js starter with authentication, database, and beautiful UI components. Built with TypeScript, Tailwind CSS, and modern best practices.',
+		'Shorten, track, and manage your links with ease. Create branded short links, track clicks with analytics, and share with confidence. Your all-in-one link management platform.',
 };
 
 export default function RootLayout({
