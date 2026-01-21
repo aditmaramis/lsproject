@@ -149,6 +149,13 @@ import { UserProfile } from './UserProfile';
 - Ensure keyboard navigation works
 - Maintain proper heading hierarchy
 
+### 9. **Next.js Routing & Middleware**
+
+- **⚠️ NEVER use `middleware.ts`** - This is deprecated in Next.js 16+
+- **ALWAYS use `proxy.ts`** for middleware-like functionality instead
+- The traditional middleware.ts pattern is no longer supported in this version
+- Refer to [proxy.ts](proxy.ts) for the correct implementation pattern
+
 ---
 
 ## Quick Reference

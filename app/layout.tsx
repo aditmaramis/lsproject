@@ -34,7 +34,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<ClerkProvider appearance={{ baseTheme: shadcn }}>
+		<ClerkProvider
+			appearance={{ baseTheme: shadcn }}
+			signInFallbackRedirectUrl="/dashboard"
+			signUpFallbackRedirectUrl="/dashboard"
+		>
 			<html
 				lang="en"
 				className="dark"
