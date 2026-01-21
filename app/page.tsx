@@ -1,5 +1,5 @@
 import { auth } from '@clerk/nextjs/server';
-import { SignInButton, SignUpButton } from '@clerk/nextjs';
+import { SignUpButton } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 import {
 	ArrowRight,
@@ -54,16 +54,14 @@ export default async function Home() {
 					</p>
 					<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 						<SignUpButton mode="modal">
-							<Button size="lg" className="gap-2">
+							<Button
+								size="lg"
+								className="gap-2"
+							>
 								Start Shortening Free
 								<ArrowRight className="size-4" />
 							</Button>
 						</SignUpButton>
-						<SignInButton mode="modal">
-							<Button size="lg" variant="outline">
-								Sign In
-							</Button>
-						</SignInButton>
 					</div>
 				</div>
 			</section>
@@ -89,8 +87,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>Instant Link Shortening</CardTitle>
 								<CardDescription>
-									Create short, memorable links in seconds. Perfect for social media, emails, and
-									marketing campaigns.
+									Create short, memorable links in seconds. Perfect for social
+									media, emails, and marketing campaigns.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -102,8 +100,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>Real-Time Analytics</CardTitle>
 								<CardDescription>
-									Track clicks, geographic data, and device information. Understand your audience
-									with detailed insights.
+									Track clicks, geographic data, and device information.
+									Understand your audience with detailed insights.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -115,8 +113,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>Lightning Fast Redirects</CardTitle>
 								<CardDescription>
-									Optimized infrastructure ensures your links redirect users instantly, anywhere in
-									the world.
+									Optimized infrastructure ensures your links redirect users
+									instantly, anywhere in the world.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -128,8 +126,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>QR Code Generation</CardTitle>
 								<CardDescription>
-									Automatically generate QR codes for your short links. Perfect for print materials
-									and offline campaigns.
+									Automatically generate QR codes for your short links. Perfect
+									for print materials and offline campaigns.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -141,8 +139,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>Secure & Reliable</CardTitle>
 								<CardDescription>
-									Enterprise-grade security with authentication, encrypted data, and reliable
-									uptime for your links.
+									Enterprise-grade security with authentication, encrypted data,
+									and reliable uptime for your links.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -154,8 +152,8 @@ export default async function Home() {
 								</div>
 								<CardTitle>Custom Short Links</CardTitle>
 								<CardDescription>
-									Create branded, memorable short links with custom aliases. Make your links stand
-									out.
+									Create branded, memorable short links with custom aliases.
+									Make your links stand out.
 								</CardDescription>
 							</CardHeader>
 						</Card>
@@ -170,11 +168,14 @@ export default async function Home() {
 						Ready to shorten your first link?
 					</h2>
 					<p className="mx-auto mb-8 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
-						Join thousands of users who trust us with their link management. Start
-						free today.
+						Join thousands of users who trust us with their link management.
+						Start free today.
 					</p>
 					<SignUpButton mode="modal">
-						<Button size="lg" className="gap-2">
+						<Button
+							size="lg"
+							className="gap-2"
+						>
 							Get Started Free
 							<ArrowRight className="size-4" />
 						</Button>
