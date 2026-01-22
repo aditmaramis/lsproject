@@ -1,3 +1,7 @@
+---
+description: Read this file before implementing UI components in this project.
+---
+
 # UI Component Conventions
 
 > **Purpose**: This document defines the standards for building UI components using shadcn/ui in this project.

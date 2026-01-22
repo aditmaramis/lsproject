@@ -4,19 +4,6 @@
 
 ---
 
-## ⚠️ CRITICAL: READ INSTRUCTION FILES FIRST
-
-**🚨 BEFORE GENERATING ANY CODE, YOU MUST:**
-
-1. **ALWAYS read the relevant instruction files** from the `/docs` directory
-2. **NEVER skip this step** - instruction files contain essential standards and patterns
-3. **Check which instruction files apply** to the code you're about to write
-4. **Follow the conventions exactly** as specified in those files
-
-**Failure to read instruction files before coding will result in inconsistent code that violates project standards.**
-
----
-
 ## 📋 Table of Contents
 
 - [Project Overview](#project-overview)
@@ -29,7 +16,7 @@
 
 ## Project Overview
 
-**lsproject** is a modern Next.js application built with TypeScript, featuring:
+**lsproject** is a modern Next.js link shortener application built with TypeScript, featuring:
 
 - Server-side rendering with Next.js 16 App Router
 - Type-safe database access with Drizzle ORM and Neon PostgreSQL
@@ -54,18 +41,7 @@
 
 ---
 
-## Instruction Files
-
-Detailed coding standards are organized into separate files in the `/docs` directory.
-
 **🚨 MANDATORY: ALWAYS read the relevant instruction file BEFORE making any changes to that part of the codebase. This is NOT optional - these files define the required standards and patterns that MUST be followed.**
-
-### Core Instructions
-
-- **[Authentication Conventions](/docs/auth-conventions.md)** - Clerk authentication standards and patterns (READ BEFORE touching any auth code)
-- **[UI Component Conventions](/docs/ui-conventions.md)** - shadcn/ui component usage and standards (READ BEFORE creating/modifying UI components)
-
----
 
 ## General Principles
 
@@ -90,7 +66,6 @@ Detailed coding standards are organized into separate files in the `/docs` direc
 /components       → Reusable React components
 /db               → Database schema and connection
 /lib              → Utility functions and helpers
-/docs             → Agent instruction files
 /public           → Static assets
 ```
 
@@ -194,7 +169,7 @@ Required environment variables:
 
 ### Before Making Changes
 
-1. **🚨 FIRST: Read the relevant instruction file(s)** from `/docs` - THIS IS MANDATORY
+1. **🚨 FIRST: Read the relevant instruction file(s)** from `/.github/instructions` - THIS IS MANDATORY
 2. **Verify you understand the conventions** specified in the instruction files
 3. **Check existing patterns** in similar files
 4. **Verify type safety** with TypeScript
@@ -204,7 +179,7 @@ Required environment variables:
 
 ### When Creating New Features
 
-1. **🚨 READ relevant instruction files from `/docs` first** (e.g., auth-conventions.md for auth features, ui-conventions.md for UI components)
+1. **🚨 READ relevant instruction files from `/.github/instructions` first** (e.g., auth-conventions.instruction.md for auth features, ui-conventions.instructions.md for UI components)
 2. Determine if component should be Server or Client
 3. Define TypeScript types/interfaces first
 4. Follow file naming conventions from instruction files
@@ -214,7 +189,7 @@ Required environment variables:
 
 ### When Modifying Existing Code
 
-1. **🚨 READ the relevant instruction files** from `/docs` that apply to the code area you're modifying
+1. **🚨 READ the relevant instruction files** from `/.github/instructions` that apply to the code area you're modifying
 2. Understand the current implementation
 3. Maintain consistency with existing patterns AND instruction file standards
 4. Update related types/interfaces
@@ -228,11 +203,6 @@ Required environment variables:
 When uncertain about:
 
 - **Architecture decisions**: Refer to existing similar components
-- **TypeScript patterns**: Check `/docs/typescript-standards.md`
-- **Next.js specifics**: Check `/docs/nextjs-conventions.md`
-- **Database queries**: Check `/docs/database-conventions.md`
-- **Styling approach**: Check `/docs/styling-conventions.md`
-- **Auth flows**: Check `/docs/auth-conventions.md`
 
 ---
 
