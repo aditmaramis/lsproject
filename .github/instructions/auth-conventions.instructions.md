@@ -1,3 +1,7 @@
+---
+description: Read this file before implementing authentication features in this project.
+---
+
 # Authentication Conventions
 
 > **Purpose**: This document defines authentication standards and patterns for this project.
